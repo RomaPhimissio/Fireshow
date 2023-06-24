@@ -1,0 +1,23 @@
+// Подлкючение базовых стилей
+@import "./default/variables";
+@import "./default/null";
+@import "./default/mixins";
+@import "./default/function";
+@import "./default/fonts";
+@import "./default/global";
+
+// Header / Footer
+@import "./components/structure/header";
+@import "./components/structure/footer";
+
+// Подключение стилей базовых компонентов
+@import "./components/base/pop-up";
+@import "./components/base/spoiler";
+@import "./components/base/dropdown";
+@import "./components/base/tabs";
+@import "./components/base/dropdown-hover";
+@import "./components/base/paralax";
+
+
+//Подключение стилей конкретной страницы
+@import "./pages/home";

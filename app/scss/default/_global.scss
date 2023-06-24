@@ -1,0 +1,46 @@
+body.lock {
+   overflow: hidden;
+}
+
+body {
+   font-family: $ff1;
+   @include fz(16);
+   font-weight: 400;
+}
+
+[class*="__container"] {
+   padding-left: percent(20, 375);
+   padding-right: percent(20, 375);
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh;
+}
+
+main {
+   flex: 1 1 auto;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+@keyframes slide-in {
+   0% {
+      transform: translateX(-30%);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+
+.animate {
+   animation: slide-in 2s forwards;
+}

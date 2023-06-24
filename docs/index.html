@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	
+	<link rel="stylesheet" href="./css/home.min.css">
+	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+	<title>Techno-Stack</title>
+</head>
+
+<body class="home">
+  <div class="wrapper">
+    <main>
+      <section class="movie">
+        <div class="movie__container">
+          <div class="movie__body">
+            <h2 class="movie__title">Party</h2>
+            <p class="movie__text">This is the best video</p>
+          </div>
+          <div class="movie__play-wrap">
+            <video class="movie__play" preload="auto" autoplay muted loop>
+              <source src="img/movie/sky.webm" type="video/webm">
+              <source src="img/movie/sky.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__container">
+          <div class="video__block">
+            <div class="video__body">
+              <video class="video__movie" preload="metadata" controls>
+                <source src="img/movie/lion.webm" type="video/webm">
+                <source src="img/movie/lion.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p class="video__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod, nemo
+              perspiciatis optio officiis, facere fuga numquam rem mollitia ducimus quo error molestias adipisci ab
+              voluptatibus vel consequatur, velit accusamus?</p>
+          </div>
+          <div class="video__block">
+            <div class="video__body">
+              <iframe src="https://www.youtube.com/embed/SYIX7gmP97U" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod, nemo
+              perspiciatis optio officiis, facere fuga numquam rem mollitia ducimus quo error molestias adipisci ab
+              voluptatibus vel consequatur, velit accusamus?</p>
+          </div>
+          <div class="video__block">
+            <div class="video__body">
+              <video class="video__movie" preload="metadata" controls>
+                <source src="img/movie/lion.webm" type="video/webm">
+                <source src="img/movie/lion.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p class="video__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod, nemo
+              perspiciatis optio officiis, facere fuga numquam rem mollitia ducimus quo error molestias adipisci ab
+              voluptatibus vel consequatur, velit accusamus?</p>
+          </div>
+        </div>
+      </section>
+      <div class="parallax">
+  <div class="parallax__content">
+  </div>
+</div>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__picture">
+            <picture>
+              <source type="image/webp" srcset="img/gallery/show.webp" media="(max-width: 500px)">
+              <source type="image/webp" srcset="img/gallery/cars.webp" media="(max-width: 700px)">
+              <source type="image/webp" srcset="img/gallery/panda.webp">
+              <img src="img/gallery/panda.jpg" alt="animal" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

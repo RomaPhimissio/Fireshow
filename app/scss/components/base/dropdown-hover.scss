@@ -1,0 +1,30 @@
+.menu {
+    background-color: #000f00;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    // .menu__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .menu__item
+
+    &__item {}
+
+    // .menu__link
+
+    &__link {}
+
+    // .menu__sublist
+
+    &__sublist {}
+
+    // .menu__subitem
+
+    &__subitem {}
+
+    // .menu__sublink
+
+    &__sublink {}
+}

@@ -1,0 +1,144 @@
+.hero {
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    // .hero__container
+
+    &__container {
+        padding-top: 5%;
+    }
+
+    // .hero__picture
+
+    &__picture {
+        position: relative;
+        padding-bottom: 50%;
+        width: 100%;
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+.video {
+
+    // .video__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    // .video__body
+
+    &__body {
+        position: relative;
+        padding-bottom: 56%;
+    }
+
+    // .video__block
+
+    &__block {
+        iframe {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    // .video__movie
+
+    &__movie {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    // .video__text
+
+    &__text {
+        @include fl(25, 25);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+.movie {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // .movie__container
+
+    &__container {
+        padding: 0;
+
+    }
+
+    // .movie__body
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        gap: 35px;
+    }
+
+    // .movie__title
+
+    &__title {
+        letter-spacing: 10px;
+        font-weight: 700;
+        @include fl(50, 30);
+        color: #282d44;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    // .movie__text
+
+    &__text {
+        letter-spacing: 5px;
+        @include fl(25, 30);
+        color: #282d44;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    // .movie__play-wrap
+
+    &__play-wrap {}
+
+    // .movie__play
+
+    &__play {
+        position: fixed;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
