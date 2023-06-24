@@ -685,9 +685,14 @@ img {
   left: 0;
 }
 
+.video {
+  z-index: 1;
+  position: relative;
+}
+
 .video__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -746,6 +751,7 @@ img {
   align-items: center;
   flex: 1 1 auto;
   gap: 35px;
+  padding: 3%;
 }
 
 .movie__title {
@@ -759,6 +765,7 @@ img {
 }
 
 .movie__text {
+  text-align: center;
   letter-spacing: 5px;
   font-size: 1.5625em;
   line-height: 1.2;
@@ -779,5 +786,11 @@ img {
 @media (min-width: 769px) {
   .burger {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }

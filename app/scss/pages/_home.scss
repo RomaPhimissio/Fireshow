@@ -28,15 +28,20 @@
 
 
 .video {
-
+    z-index: 1;
+    position: relative;
     // .video__container
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 20px;
         padding-top: 5%;
         padding-bottom: 5%;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
     }
 
     // .video__body
@@ -105,6 +110,7 @@
         align-items: center;
         flex: 1 1 auto;
         gap: 35px;
+        padding: 3%;
     }
 
     // .movie__title
@@ -121,6 +127,7 @@
     // .movie__text
 
     &__text {
+        text-align: center;
         letter-spacing: 5px;
         @include fl(25, 30);
         color: #282d44;
