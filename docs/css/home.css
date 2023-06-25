@@ -688,6 +688,7 @@ img {
 .video {
   z-index: 1;
   position: relative;
+  background-color: #fff;
 }
 
 .video__container {
