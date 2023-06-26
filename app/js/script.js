@@ -165,12 +165,6 @@ new Swiper(".swiper", {
       clickable: true,
    },
    breakpoints: {
-      0: {
-         navigation: {
-            nextEl: null,
-            prevEl: null,
-         }
-      },
       600: {
          navigation: {
             nextEl: ".swiper-button-next",
