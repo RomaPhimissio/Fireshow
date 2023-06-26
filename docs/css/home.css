@@ -768,3 +768,23 @@ img {
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .movie__title {
+    letter-spacing: 5px;
+    font-size: 2.3125em;
+    line-height: 0.6756756757;
+    padding: 0 10%;
+  }
+
+  .movie__text {
+    letter-spacing: 3px;
+    font-size: 1.25em;
+    line-height: 1.35;
+  }
+
+  .movie__slide {
+    align-items: flex-start;
+    padding-top: 10%;
+  }
+}

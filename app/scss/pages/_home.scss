@@ -37,6 +37,12 @@
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
+
+        @media (max-width: 767px) {
+            letter-spacing: 5px;
+            @include fl(37, 25);
+            padding: 0 10%;
+        }
     }
 
     // .movie__text
@@ -48,6 +54,11 @@
         // color: #282d44;
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
+
+        @media (max-width: 767px) {
+            letter-spacing: 3px;
+            @include fl(20, 27);
+        }
     }
 
     // .movie__play
@@ -66,6 +77,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 767px) {
+            align-items: flex-start;
+            padding-top: 10%;
+        }
     }
 
     .swip__slide {
