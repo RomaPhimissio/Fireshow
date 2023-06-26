@@ -787,4 +787,14 @@ img {
     align-items: flex-start;
     padding-top: 10%;
   }
+
+  .movie .swiper-button-next,
+  .movie .swiper-button-prev {
+    display: none;
+  }
+
+  .swip .swiper-button-next,
+  .swip .swiper-button-prev {
+    display: none;
+  }
 }

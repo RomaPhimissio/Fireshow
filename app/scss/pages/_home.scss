@@ -91,6 +91,10 @@
     .swiper-button-next,
     .swiper-button-prev {
         color: #fff;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     .swiper-pagination {
@@ -219,6 +223,10 @@
     .swiper-button-next,
     .swiper-button-prev {
         color: #fff;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     .swiper-pagination {
