@@ -160,16 +160,12 @@ new Swiper(".swiper", {
    slidesPerView: 1,
    loop: true,
    effect: "fade",
+   navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+   },
    pagination: {
       el: ".swiper-pagination",
       clickable: true,
-   },
-   breakpoints: {
-      600: {
-         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-         }
-      }
    }
 });
