@@ -9,21 +9,66 @@
 <body class="home">
   <div class="wrapper">
     <main>
-      <section class="movie">
-        <div class="movie__container">
-          <div class="movie__body">
-            <h2 class="movie__title">Party</h2>
-            <p class="movie__text">This is the best video</p>
-          </div>
-          <div class="movie__play-wrap">
-            <video class="movie__play" preload="auto" autoplay muted loop loading="eager">
-              <source src="@img/movie/sky.webm" type="video/webm">
-              <source src="@img/movie/sky.mp4" type="video/mp4">
-            </video>
-          </div>
+      <section class="movie swiper">
+        <div class="movie__container swiper-wrapper">
+          @@include('./components/base/_slide-movie.html', {
+          'title': 'So easy',
+          'text': 'But it is not exactly',
+          'number': '1',
+          'load': 'eager'
+          })
+          @@include('./components/base/_slide-movie.html', {
+          'title': 'The best',
+          'text': 'Too much is good',
+          'number': '2',
+          'load': 'lazy'
+          })
+          @@include('./components/base/_slide-movie.html', {
+          'title': 'So light',
+          'text': 'This is really nice',
+          'number': '3',
+          'load': 'lazy'
+          })
+          @@include('./components/base/_slide-movie.html', {
+          'title': 'So hard',
+          'text': 'Always possible say something',
+          'number': '4',
+          'loading': 'lazy'
+          })
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="swip swiper">
+        <div class="swip__container swiper-wrapper">
+          @@include('./components/base/_slide.html', {
+          'number': '1'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '2'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '3'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '4'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '5'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '6'
+          })
+          @@include('./components/base/_slide.html', {
+          'number': '7'
+          })
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="video">
+      <!-- <section class="video">
         <div class="video__container">
           <div class="video__block">
             <div class="video__body">
@@ -47,8 +92,8 @@
               voluptatibus vel consequatur, velit accusamus?</p>
           </div>
         </div>
-      </section>
-      <section class="hero">
+      </section> -->
+      <!-- <section class="hero">
         <div class="hero__container">
           <div class="hero__picture">
             <picture>
@@ -59,12 +104,11 @@
             </picture>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
   </div>
-  @@include('./components/structure/_scripts.html', {
-  'swiper': '',
-  })
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

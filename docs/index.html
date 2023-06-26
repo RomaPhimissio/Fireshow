@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/home.min.css">
 	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 	<title>Techno-Stack</title>
@@ -15,21 +15,103 @@
 <body class="home">
   <div class="wrapper">
     <main>
-      <section class="movie">
-        <div class="movie__container">
-          <div class="movie__body">
-            <h2 class="movie__title">Party</h2>
-            <p class="movie__text">This is the best video</p>
-          </div>
-          <div class="movie__play-wrap">
-            <video class="movie__play" preload="auto" autoplay muted loop loading="eager">
-              <source src="img/movie/sky.webm" type="video/webm">
-              <source src="img/movie/sky.mp4" type="video/mp4">
-            </video>
-          </div>
+      <section class="movie swiper">
+        <div class="movie__container swiper-wrapper">
+          <div class="movie__slide swiper-slide">
+    <div class="movie__body">
+        <h2 class="movie__title">So easy</h2>
+        <p class="movie__text">But it is not exactly</p>
+    </div>
+    <video class="movie__play" preload="auto" autoplay muted loop loading="eager">
+        <source src="img/movie/movie1.webm" type="video/webm">
+        <source src="img/movie/movie1.mp4" type="video/mp4">
+    </video>
+</div>
+          <div class="movie__slide swiper-slide">
+    <div class="movie__body">
+        <h2 class="movie__title">The best</h2>
+        <p class="movie__text">Too much is good</p>
+    </div>
+    <video class="movie__play" preload="auto" autoplay muted loop loading="lazy">
+        <source src="img/movie/movie2.webm" type="video/webm">
+        <source src="img/movie/movie2.mp4" type="video/mp4">
+    </video>
+</div>
+          <div class="movie__slide swiper-slide">
+    <div class="movie__body">
+        <h2 class="movie__title">So light</h2>
+        <p class="movie__text">This is really nice</p>
+    </div>
+    <video class="movie__play" preload="auto" autoplay muted loop loading="lazy">
+        <source src="img/movie/movie3.webm" type="video/webm">
+        <source src="img/movie/movie3.mp4" type="video/mp4">
+    </video>
+</div>
+          <div class="movie__slide swiper-slide">
+    <div class="movie__body">
+        <h2 class="movie__title">So hard</h2>
+        <p class="movie__text">Always possible say something</p>
+    </div>
+    <video class="movie__play" preload="auto" autoplay muted loop loading="@@load">
+        <source src="img/movie/movie4.webm" type="video/webm">
+        <source src="img/movie/movie4.mp4" type="video/mp4">
+    </video>
+</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="swip swiper">
+        <div class="swip__container swiper-wrapper">
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide1.webp">
+        <img src="img/gallery/slide1.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide2.webp">
+        <img src="img/gallery/slide2.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide3.webp">
+        <img src="img/gallery/slide3.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide4.webp">
+        <img src="img/gallery/slide4.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide5.webp">
+        <img src="img/gallery/slide5.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide6.webp">
+        <img src="img/gallery/slide6.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swip__slide swiper-slide">
+    <picture>
+        <source type="image/webp" srcset="img/gallery/slide7.webp">
+        <img src="img/gallery/slide7.jpg" alt="cars">
+    </picture>
+</div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="video">
+      <!-- <section class="video">
         <div class="video__container">
           <div class="video__block">
             <div class="video__body">
@@ -53,8 +135,8 @@
               voluptatibus vel consequatur, velit accusamus?</p>
           </div>
         </div>
-      </section>
-      <section class="hero">
+      </section> -->
+      <!-- <section class="hero">
         <div class="hero__container">
           <div class="hero__picture">
             <picture>
@@ -65,11 +147,11 @@
             </picture>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
   </div>
-  
-<script src="js/script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

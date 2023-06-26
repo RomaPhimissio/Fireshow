@@ -147,3 +147,35 @@ window.addEventListener("load", () => {
 //       element.style.backgroundPositionY = yOffset + "px";
 //    }
 // });
+
+
+new Swiper(".swiper", {
+   // клавиатура
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+   },
+   spaceBetween: 30,
+   slidesPerView: 1,
+   loop: true,
+   effect: "fade",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+   },
+   breakpoints: {
+      0: {
+         navigation: {
+            nextEl: null,
+            prevEl: null,
+         }
+      },
+      600: {
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         }
+      }
+   }
+});
