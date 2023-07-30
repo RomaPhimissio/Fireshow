@@ -149,23 +149,24 @@ window.addEventListener("load", () => {
 // });
 
 
-new Swiper(".swiper", {
+new Swiper('.swiper', {
    // клавиатура
    keyboard: {
       enabled: true,
       onlyInViewport: true,
       pageUpDown: true
    },
-   spaceBetween: 30,
+   // spaceBetween: 30,
    slidesPerView: 1,
    loop: true,
-   effect: "fade",
-   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-   },
-   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-   }
+   // effect: 'fade',
+   // fadeEffect: {
+   //    crossfade: true
+   // },
+   direction: 'vertical',
+   mousewheel: true,
+   // navigation: {
+   //    nextEl: ".swiper-button-next",
+   //    prevEl: ".swiper-button-prev",
+   // }
 });

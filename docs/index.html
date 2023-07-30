@@ -17,90 +17,131 @@
     <main>
       <section class="movie swiper">
         <div class="movie__container swiper-wrapper">
-          <div class="movie__slide swiper-slide">
-    <div class="movie__body">
-        <h2 class="movie__title">So easy</h2>
-        <p class="movie__text">But it is not exactly</p>
-    </div>
-    <video class="movie__play" preload="auto" autoplay muted loop loading="eager">
-        <source src="img/movie/movie1.webm" type="video/webm">
-        <source src="img/movie/movie1.mp4" type="video/mp4">
-    </video>
+          <div class="movie__slide swiper-slide" lazy="false">
+  <div class="movie__body">
+    <h2 class="movie__title">So easy</h2>
+    <p class="movie__text">But it is not exactly</p>
+  </div>
+  <video class="movie__play" autoplay muted loop loading="eager">
+    <source src="img/movie/movie1.webm" type="video/webm">
+    <source src="img/movie/movie1.mp4" type="video/mp4">
+  </video>
 </div>
-          <div class="movie__slide swiper-slide">
-    <div class="movie__body">
-        <h2 class="movie__title">So comfortable</h2>
-        <p class="movie__text">Too much is a good thing</p>
-    </div>
-    <video class="movie__play" preload="none" autoplay muted loop loading="lazy">
-        <source src="img/movie/movie2.webm" type="video/webm">
-        <source src="img/movie/movie2.mp4" type="video/mp4">
-    </video>
+          <div class="movie__slide swiper-slide" lazy="true">
+  <div class="movie__body">
+    <h2 class="movie__title">So comfortable</h2>
+    <p class="movie__text">Too much is a good thing</p>
+  </div>
+  <video class="movie__play" autoplay muted loop loading="lazy">
+    <source src="img/movie/movie2.webm" type="video/webm">
+    <source src="img/movie/movie2.mp4" type="video/mp4">
+  </video>
 </div>
-          <div class="movie__slide swiper-slide">
-    <div class="movie__body">
-        <h2 class="movie__title">So light</h2>
-        <p class="movie__text">This is really nice</p>
-    </div>
-    <video class="movie__play" preload="none" autoplay muted loop loading="lazy">
-        <source src="img/movie/movie3.webm" type="video/webm">
-        <source src="img/movie/movie3.mp4" type="video/mp4">
-    </video>
+          <div class="movie__slide swiper-slide" lazy="true">
+  <div class="movie__body">
+    <h2 class="movie__title">So light</h2>
+    <p class="movie__text">This is really nice</p>
+  </div>
+  <video class="movie__play" autoplay muted loop loading="lazy">
+    <source src="img/movie/movie3.webm" type="video/webm">
+    <source src="img/movie/movie3.mp4" type="video/mp4">
+  </video>
 </div>
         </div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div> -->
       </section>
-      <section class="swip swiper">
+      <!-- <section class="swip swiper">
         <div class="swip__container swiper-wrapper">
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide1.webp">
-        <img src="img/gallery/slide1.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide1.webp">
+    <img src="img/gallery/slide1.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide2.webp">
-        <img src="img/gallery/slide2.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide2.webp">
+    <img src="img/gallery/slide2.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide3.webp">
-        <img src="img/gallery/slide3.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide3.webp">
+    <img src="img/gallery/slide3.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide4.webp">
-        <img src="img/gallery/slide4.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide4.webp">
+    <img src="img/gallery/slide4.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide5.webp">
-        <img src="img/gallery/slide5.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide5.webp">
+    <img src="img/gallery/slide5.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide6.webp">
-        <img src="img/gallery/slide6.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide6.webp">
+    <img src="img/gallery/slide6.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swip__slide swiper-slide">
-    <picture>
-        <source type="image/webp" srcset="img/gallery/slide7.webp">
-        <img src="img/gallery/slide7.jpg" alt="cars">
-    </picture>
+  <picture>
+    <source type="image/webp" srcset="img/gallery/slide7.webp">
+    <img src="img/gallery/slide7.jpg" alt="cars">
+  </picture>
 </div>
           <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </section> -->
+      <!-- <section class="content">
+        <h2 class="visually-hidden">Content</h2>
+        <div class="content__container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem vero minima modi saepe
+            tempore! Cum earum optio necessitatibus quia rerum possimus facilis beatae numquam eligendi, id impedit ex
+            quas.</p>
+        </div>
+      </section> -->
       <!-- <section class="video">
         <div class="video__container">
           <div class="video__block">
